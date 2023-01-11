@@ -60,7 +60,6 @@ class LIDC_IDRI(Dataset):
         #Convert uint8 to float tensors
         image = image.type(torch.FloatTensor)
         label = label.type(torch.FloatTensor)
-
         return image, label, series_uid
 
     # Override to give PyTorch size of dataset
